@@ -16,7 +16,7 @@ $timeStr = date('Y-m-d H:i:s');
 $pdf = new ReadPdf();
 
 ## source && pageCount
-$pageCount = $pdf->setSourceFile("source/2800-yidejia.pdf");
+$pageCount = $pdf->setSourceFile( "test.pdf" );
 
 ## 中文字体 文字大小 文字颜色
 $pdf->AddGBFont('simhei', '黑体');
