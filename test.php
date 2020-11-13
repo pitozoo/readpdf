@@ -1,70 +1,71 @@
 <?php
 
 /**
- * 
+ * @name test
  */
-
 
 require_once 'src/autoload.php';
 
+use pitozoo\ReadPdf\ReadPdf;
 
+## time
+$timeStr = date('Y-m-d H:i:s');
 
-use setasign\Fpdi\Fpdi;
 
 ## initiate FPDI
-$pdf = new Fpdi();
+$pdf = new ReadPdf();
 
 ## source && pageCount
-$pageCount = $pdf->setSourceFile( "source/2800-yidejia.pdf" );
+$pageCount = $pdf->setSourceFile("source/2800-yidejia.pdf");
 
-## 中文
-$pdf->AddGBFont( 'simhei' , '黑体' );
-
-
+## 中文字体 文字大小 文字颜色
+$pdf->AddGBFont('simhei', '黑体');
+$pdf->SetFont('simhei', '', 11);
+$pdf->SetTextColor(21, 21, 21);
 
 ## loop
 for ($pageNo = 1; $pageNo <= $pageCount; $pageNo++) {
-	
-	## 1. import
-	$tplId = $pdf->importPage( $pageNo );
 
-	## 2. add new page
-	$pdf->AddPage();
+  ## 1. import - add - use
+  $tplId = $pdf->importPage($pageNo);
+  $pdf->AddPage();
+  $pdf->useImportedPage($tplId, ['adjustPageSize' => true]);
 
-	## 3. use
-	$pdf->useImportedPage( $tplId , ['adjustPageSize' => true] );
+  ## 5. 在不同页面里输出不同的内容
+  switch ($pageNo) {
+    case 1:
 
-	## 4. write
-	$pdf->SetFont( 'Helvetica' );
-	$pdf->SetTextColor(255, 0, 0);
+      $textX = 10;
+      $textY = 10;
+      $pdf->SetXY($textX, $textY);
+      $msg = '第一页' . $timeStr;
+      $writeText = iconv("utf-8", "gbk", $msg);
+      $pdf->Write(0, $writeText);
 
-	## 5. 在不同页面里输出不同的内容 
-	switch ($pageNo) {
-		case 1:
-			$pdf->SetXY(30, 30);
-			$pdf->Write(0, '第一页');
-			break;
-		
-		case 2:
-			$pdf->SetXY(30, 30);
-			$pdf->Write(0, 'second xxxxxx');
-			break;
-	}
+      break;
+
+    case 2:
+
+      $textX = 10;
+      $textY = 10;
+      $pdf->SetXY($textX, $textY);
+      $pdf->Write(0, 'second xxxxxx');
+
+      break;
+  }
 
 }
 
-// var_dump( __FILE__ );
-// var_dump( __DIR__ );
-// exit();
+
+## 导出为pdf
+$savePath = __DIR__ . '/source/';
+$savePdfName = 'new.pdf';
+$pdf->Output('F', $savePdfName);
 
 ## 直接浏览器里输出为 pdf
-$savePath = __DIR__ . '/source/';
-$savePdfName = 'test.pdf';
-// $pdf->Output( 'F' , $savePdfName );         
-$pdf->Output( );         
+// $pdf->Output( );         
 
 
-## 或者可以处理为 导出为pdf
 
 
 

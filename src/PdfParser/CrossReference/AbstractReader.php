@@ -1,19 +1,19 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfParser\CrossReference;
+namespace pitozoo\ReadPdf\PdfParser\CrossReference;
 
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfToken;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
+use pitozoo\ReadPdf\PdfParser\PdfParser;
+use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
+use pitozoo\ReadPdf\PdfParser\Type\PdfToken;
+use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * Abstract class for cross-reference reader classes.

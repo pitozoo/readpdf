@@ -1,14 +1,14 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfParser\Filter;
+namespace pitozoo\ReadPdf\PdfParser\Filter;
 
 /**
  * Class for handling ASCII base-85 encoded data

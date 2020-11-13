@@ -1,25 +1,25 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfReader;
+namespace pitozoo\ReadPdf\PdfReader;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
+use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use pitozoo\ReadPdf\PdfParser\PdfParser;
+use pitozoo\ReadPdf\PdfParser\PdfParserException;
+use pitozoo\ReadPdf\PdfParser\Type\PdfArray;
+use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
+use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObject;
+use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObjectReference;
+use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
+use pitozoo\ReadPdf\PdfParser\Type\PdfType;
+use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * A PDF reader class

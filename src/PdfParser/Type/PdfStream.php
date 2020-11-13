@@ -1,25 +1,25 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfParser\Type;
+namespace pitozoo\ReadPdf\PdfParser\Type;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\Filter\Ascii85;
-use setasign\Fpdi\PdfParser\Filter\AsciiHex;
-use setasign\Fpdi\PdfParser\Filter\FilterException;
-use setasign\Fpdi\PdfParser\Filter\Flate;
-use setasign\Fpdi\PdfParser\Filter\Lzw;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\FpdiPdfParser\PdfParser\Filter\Predictor;
+use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use pitozoo\ReadPdf\PdfParser\Filter\Ascii85;
+use pitozoo\ReadPdf\PdfParser\Filter\AsciiHex;
+use pitozoo\ReadPdf\PdfParser\Filter\FilterException;
+use pitozoo\ReadPdf\PdfParser\Filter\Flate;
+use pitozoo\ReadPdf\PdfParser\Filter\Lzw;
+use pitozoo\ReadPdf\PdfParser\PdfParser;
+use pitozoo\ReadPdf\PdfParser\PdfParserException;
+use pitozoo\ReadPdf\PdfParser\StreamReader;
+use pitozoo\ReadPdfPdfParser\PdfParser\Filter\Predictor;
 
 /**
  * Class representing a PDF stream object

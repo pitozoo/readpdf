@@ -1,41 +1,41 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi;
+namespace pitozoo\ReadPdf;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\Filter\FilterException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfBoolean;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfHexString;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfParser\Type\PdfString;
-use setasign\Fpdi\PdfParser\Type\PdfToken;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
-use setasign\Fpdi\PdfReader\PageBoundaries;
-use setasign\Fpdi\PdfReader\PdfReader;
-use setasign\Fpdi\PdfReader\PdfReaderException;
+use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use pitozoo\ReadPdf\PdfParser\Filter\FilterException;
+use pitozoo\ReadPdf\PdfParser\PdfParser;
+use pitozoo\ReadPdf\PdfParser\PdfParserException;
+use pitozoo\ReadPdf\PdfParser\StreamReader;
+use pitozoo\ReadPdf\PdfParser\Type\PdfArray;
+use pitozoo\ReadPdf\PdfParser\Type\PdfBoolean;
+use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
+use pitozoo\ReadPdf\PdfParser\Type\PdfHexString;
+use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObject;
+use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObjectReference;
+use pitozoo\ReadPdf\PdfParser\Type\PdfName;
+use pitozoo\ReadPdf\PdfParser\Type\PdfNull;
+use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
+use pitozoo\ReadPdf\PdfParser\Type\PdfStream;
+use pitozoo\ReadPdf\PdfParser\Type\PdfString;
+use pitozoo\ReadPdf\PdfParser\Type\PdfToken;
+use pitozoo\ReadPdf\PdfParser\Type\PdfType;
+use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
+use pitozoo\ReadPdf\PdfReader\PageBoundaries;
+use pitozoo\ReadPdf\PdfReader\PdfReader;
+use pitozoo\ReadPdf\PdfReader\PdfReaderException;
 use /* This namespace/class is used by the commercial FPDI PDF-Parser add-on. */
     /** @noinspection PhpUndefinedClassInspection */
     /** @noinspection PhpUndefinedNamespaceInspection */
-    setasign\FpdiPdfParser\PdfParser\PdfParser as FpdiPdfParser;
+    pitozoo\ReadPdfPdfParser\PdfParser\PdfParser as FpdiPdfParser;
 
 /**
  * The FpdiTrait
@@ -396,7 +396,7 @@ trait FpdiTrait
      * @param float|int|null $height The height.
      * @param bool $adjustPageSize
      * @return array The size.
-     * @see Fpdi::getTemplateSize()
+     * @see ReadPdf::getTemplateSize()
      */
     public function useImportedPage($pageId, $x = 0, $y = 0, $width = null, $height = null, $adjustPageSize = false)
     {

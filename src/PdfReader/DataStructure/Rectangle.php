@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfReader\DataStructure;
+namespace pitozoo\ReadPdf\PdfReader\DataStructure;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
+use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use pitozoo\ReadPdf\PdfParser\PdfParser;
+use pitozoo\ReadPdf\PdfParser\PdfParserException;
+use pitozoo\ReadPdf\PdfParser\Type\PdfArray;
+use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
+use pitozoo\ReadPdf\PdfParser\Type\PdfType;
+use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * Class representing a rectangle

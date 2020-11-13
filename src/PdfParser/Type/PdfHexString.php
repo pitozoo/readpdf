@@ -1,16 +1,16 @@
 <?php
 
 /**
- * This file is part of FPDI
+ * package for readpdf
  *
- * @package   setasign\Fpdi
- * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
- * @license   http://opensource.org/licenses/mit-license The MIT License
+ * @package   pitozoo\ReadPdf
+ * 
+ * 
  */
 
-namespace setasign\Fpdi\PdfParser\Type;
+namespace pitozoo\ReadPdf\PdfParser\Type;
 
-use setasign\Fpdi\PdfParser\StreamReader;
+use pitozoo\ReadPdf\PdfParser\StreamReader;
 
 /**
  * Class representing a hexadecimal encoded PDF string object
