@@ -1,14 +1,19 @@
-<?php
-/**
- * @name test
- * @date    2020-11-13 15:16:15
- */
+# README.md
 
-/**
+
++ 地址
 https://packagist.org/packages/pitozoo/readpdf
-composer require pitozoo/readpdf
-*/
 
++ 命令:     
+
+```bash
+composer require pitozoo/readpdf
+```
+
+
+演示: 
+
+```php
 ## 通过 composer 安装了
 require_once 'vendor/autoload.php';
 
@@ -73,4 +78,4 @@ var_dump( $timeStr );
 $savePdfName = 'new.pdf';
 $pdf->Output( 'F', $savePdfName );
 
-
+```
