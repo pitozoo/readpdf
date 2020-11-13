@@ -46,7 +46,23 @@ test.pdf
 
 + 案例
 test.php
+
 ```
+
+                 
+                 
+                 
+                 
+
+### 坑
+
++ 1. 多余的功能与多余的代码比较多(我暂时只实现读取和导出pdf、写入中文字符,其他的功能并没有去做测试，抱歉)
+
+
++ 2. 中文字体包 : 文件占磁盘空间比较大
+src/font/simhei.ttf
+src/font/simhei.z
+src/font/simhei.afm
 
 
 
