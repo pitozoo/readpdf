@@ -3,25 +3,25 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\Tcpdf;
+namespace ReadPdf\Tcpdf;
 
-use pitozoo\ReadPdf\FpdiTrait;
-use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
-use pitozoo\ReadPdf\PdfParser\Filter\AsciiHex;
-use pitozoo\ReadPdf\PdfParser\PdfParserException;
-use pitozoo\ReadPdf\PdfParser\Type\PdfHexString;
-use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObject;
-use pitozoo\ReadPdf\PdfParser\Type\PdfNull;
-use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
-use pitozoo\ReadPdf\PdfParser\Type\PdfStream;
-use pitozoo\ReadPdf\PdfParser\Type\PdfString;
-use pitozoo\ReadPdf\PdfParser\Type\PdfType;
-use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
+use ReadPdf\FpdiTrait;
+use ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use ReadPdf\PdfParser\Filter\AsciiHex;
+use ReadPdf\PdfParser\PdfParserException;
+use ReadPdf\PdfParser\Type\PdfHexString;
+use ReadPdf\PdfParser\Type\PdfIndirectObject;
+use ReadPdf\PdfParser\Type\PdfNull;
+use ReadPdf\PdfParser\Type\PdfNumeric;
+use ReadPdf\PdfParser\Type\PdfStream;
+use ReadPdf\PdfParser\Type\PdfString;
+use ReadPdf\PdfParser\Type\PdfType;
+use ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * Class ReadPdf

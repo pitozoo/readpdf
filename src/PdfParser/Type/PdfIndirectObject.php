@@ -3,16 +3,16 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\Type;
+namespace ReadPdf\PdfParser\Type;
 
-use pitozoo\ReadPdf\PdfParser\PdfParser;
-use pitozoo\ReadPdf\PdfParser\StreamReader;
-use pitozoo\ReadPdf\PdfParser\Tokenizer;
+use ReadPdf\PdfParser\PdfParser;
+use ReadPdf\PdfParser\StreamReader;
+use ReadPdf\PdfParser\Tokenizer;
 
 /**
  * Class representing an indirect object

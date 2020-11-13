@@ -3,20 +3,21 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\CrossReference;
+namespace ReadPdf\PdfParser\CrossReference;
 
-use pitozoo\ReadPdf\PdfParser\PdfParser;
-use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
-use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObject;
-use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
-use pitozoo\ReadPdf\PdfParser\Type\PdfStream;
-use pitozoo\ReadPdf\PdfParser\Type\PdfToken;
-use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
+
+use ReadPdf\PdfParser\PdfParser;
+use ReadPdf\PdfParser\Type\PdfDictionary;
+use ReadPdf\PdfParser\Type\PdfIndirectObject;
+use ReadPdf\PdfParser\Type\PdfNumeric;
+use ReadPdf\PdfParser\Type\PdfStream;
+use ReadPdf\PdfParser\Type\PdfToken;
+use ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * Class CrossReference

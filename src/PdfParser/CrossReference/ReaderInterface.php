@@ -3,14 +3,14 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\CrossReference;
+namespace ReadPdf\PdfParser\CrossReference;
 
-use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
+use ReadPdf\PdfParser\Type\PdfDictionary;
 
 /**
  * ReaderInterface for cross-reference readers.

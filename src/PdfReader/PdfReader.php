@@ -3,23 +3,23 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfReader;
+namespace ReadPdf\PdfReader;
 
-use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
-use pitozoo\ReadPdf\PdfParser\PdfParser;
-use pitozoo\ReadPdf\PdfParser\PdfParserException;
-use pitozoo\ReadPdf\PdfParser\Type\PdfArray;
-use pitozoo\ReadPdf\PdfParser\Type\PdfDictionary;
-use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObject;
-use pitozoo\ReadPdf\PdfParser\Type\PdfIndirectObjectReference;
-use pitozoo\ReadPdf\PdfParser\Type\PdfNumeric;
-use pitozoo\ReadPdf\PdfParser\Type\PdfType;
-use pitozoo\ReadPdf\PdfParser\Type\PdfTypeException;
+use ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use ReadPdf\PdfParser\PdfParser;
+use ReadPdf\PdfParser\PdfParserException;
+use ReadPdf\PdfParser\Type\PdfArray;
+use ReadPdf\PdfParser\Type\PdfDictionary;
+use ReadPdf\PdfParser\Type\PdfIndirectObject;
+use ReadPdf\PdfParser\Type\PdfIndirectObjectReference;
+use ReadPdf\PdfParser\Type\PdfNumeric;
+use ReadPdf\PdfParser\Type\PdfType;
+use ReadPdf\PdfParser\Type\PdfTypeException;
 
 /**
  * A PDF reader class

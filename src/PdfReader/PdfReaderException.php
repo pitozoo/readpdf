@@ -3,14 +3,14 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfReader;
+namespace ReadPdf\PdfReader;
 
-use pitozoo\ReadPdf\FpdiException;
+use ReadPdf\FpdiException;
 
 /**
  * Exception for the pdf reader class

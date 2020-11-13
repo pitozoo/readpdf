@@ -3,15 +3,16 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\CrossReference;
+namespace ReadPdf\PdfParser\CrossReference;
 
-use pitozoo\ReadPdf\PdfParser\PdfParser;
-use pitozoo\ReadPdf\PdfParser\StreamReader;
+
+use ReadPdf\PdfParser\PdfParser;
+use ReadPdf\PdfParser\StreamReader;
 
 /**
  * Class FixedReader

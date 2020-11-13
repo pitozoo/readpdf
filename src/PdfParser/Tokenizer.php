@@ -3,12 +3,12 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser;
+namespace ReadPdf\PdfParser;
 
 /**
  * A tokenizer class.

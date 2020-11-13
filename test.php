@@ -4,9 +4,9 @@
  * @name test
  */
 
-require_once 'src/autoload.php';
+require_once './src/ReadPdf.php';
 
-// use pitozoo\ReadPdf\ReadPdf;
+
 
 ## time
 $timeStr = date('Y-m-d H:i:s');

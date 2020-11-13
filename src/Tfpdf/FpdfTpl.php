@@ -3,14 +3,15 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\Tfpdf;
+namespace ReadPdf\Tfpdf;
 
-use pitozoo\ReadPdf\FpdfTplTrait;
+
+use ReadPdf\FpdfTplTrait;
 
 /**
  * Class FpdfTpl

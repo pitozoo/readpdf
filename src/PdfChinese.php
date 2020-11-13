@@ -6,7 +6,7 @@
  * @date    2020-11-13 09:04:00
  *
  */
-namespace pitozoo\ReadPdf;
+namespace ReadPdf;
 
 class PdfChinese extends PdfWriter
 {

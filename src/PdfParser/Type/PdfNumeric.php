@@ -3,12 +3,13 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\Type;
+namespace ReadPdf\PdfParser\Type;
+
 
 /**
  * Class representing a numeric PDF object

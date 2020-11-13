@@ -3,12 +3,12 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\Filter;
+namespace ReadPdf\PdfParser\Filter;
 
 /**
  * Class for handling ASCII base-85 encoded data

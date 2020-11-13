@@ -3,12 +3,12 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf;
+namespace ReadPdf;
 
 /**
  * Base exception class for the FPDI package.

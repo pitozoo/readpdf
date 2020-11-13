@@ -3,12 +3,12 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfReader;
+namespace ReadPdf\PdfReader;
 
 /**
  * An abstract class for page boundary constants and some helper methods

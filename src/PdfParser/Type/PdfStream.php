@@ -3,23 +3,23 @@
 /**
  * package for readpdf
  *
- * @package   pitozoo\ReadPdf
+ * @package   ReadPdf
  * 
  * 
  */
 
-namespace pitozoo\ReadPdf\PdfParser\Type;
+namespace ReadPdf\PdfParser\Type;
 
-use pitozoo\ReadPdf\PdfParser\CrossReference\CrossReferenceException;
-use pitozoo\ReadPdf\PdfParser\Filter\Ascii85;
-use pitozoo\ReadPdf\PdfParser\Filter\AsciiHex;
-use pitozoo\ReadPdf\PdfParser\Filter\FilterException;
-use pitozoo\ReadPdf\PdfParser\Filter\Flate;
-use pitozoo\ReadPdf\PdfParser\Filter\Lzw;
-use pitozoo\ReadPdf\PdfParser\PdfParser;
-use pitozoo\ReadPdf\PdfParser\PdfParserException;
-use pitozoo\ReadPdf\PdfParser\StreamReader;
-use pitozoo\ReadPdfPdfParser\PdfParser\Filter\Predictor;
+use ReadPdf\PdfParser\CrossReference\CrossReferenceException;
+use ReadPdf\PdfParser\Filter\Ascii85;
+use ReadPdf\PdfParser\Filter\AsciiHex;
+use ReadPdf\PdfParser\Filter\FilterException;
+use ReadPdf\PdfParser\Filter\Flate;
+use ReadPdf\PdfParser\Filter\Lzw;
+use ReadPdf\PdfParser\PdfParser;
+use ReadPdf\PdfParser\PdfParserException;
+use ReadPdf\PdfParser\StreamReader;
+use ReadPdfPdfParser\PdfParser\Filter\Predictor;
 
 /**
  * Class representing a PDF stream object
