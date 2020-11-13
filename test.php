@@ -6,14 +6,14 @@
 
 require_once 'src/autoload.php';
 
-use pitozoo\ReadPdf\ReadPdf;
+// use pitozoo\ReadPdf\ReadPdf;
 
 ## time
 $timeStr = date('Y-m-d H:i:s');
 
 
 ## initiate FPDI
-$pdf = new ReadPdf();
+$pdf = new pitozoo\ReadPdf\ReadPdf();
 
 ## source && pageCount
 $pageCount = $pdf->setSourceFile( "test.pdf" );
@@ -34,7 +34,8 @@ for ($pageNo = 1; $pageNo <= $pageCount; $pageNo++) {
   ## 5. 在不同页面里输出不同的内容
   switch ($pageNo) {
     case 1:
-
+      ## 假设这是第1页的内容
+      ## textX  textY 被写入文字的 X Y 坐标
       $textX = 10;
       $textY = 10;
       $pdf->SetXY($textX, $textY);
@@ -45,11 +46,12 @@ for ($pageNo = 1; $pageNo <= $pageCount; $pageNo++) {
       break;
 
     case 2:
-
+      ## 假设这是第2页的内容
+      ## textX  textY 被写入文字的 X Y 坐标
       $textX = 10;
-      $textY = 10;
+      $textY = 20;
       $pdf->SetXY($textX, $textY);
-      $pdf->Write(0, 'second xxxxxx');
+      $pdf->Write(0, '第二页xxx内容second page xxxxxx');
 
       break;
   }
